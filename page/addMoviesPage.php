@@ -12,7 +12,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
             <h3 style="text-align: center">Add Movie</h3>
         </div>
         <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
+            <label for="name" class="form-label">Movie Name</label>
             <input class="form-control" id="name" name="name" aria-describedby="nameHelp">
         </div>
         <div class="mb-3">
@@ -27,8 +27,8 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
             </select>
         </div>
         <div class="mb-3">
-            <label for="release" class="form-label">Release</label>
-            <input class="form-control" id="release" name="release" aria-describedby="releaseHelp">
+            <label for="realese" class="form-label">Realese</label>
+            <input class="form-control" id="realese" name="realese" aria-describedby="realeseHelp">
         </div>
         <div class="mb-3">
             <label for="season" class="form-label">Season</label>

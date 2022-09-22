@@ -10,8 +10,7 @@
         $synopsis = $_POST['synopsis'];
 
         $query = mysqli_query($con, "INSERT INTO movies(name, genre, release, season, synopsis) 
-            VALUES
-        ('$name', '$genre', '$release', '$season', '$synopsis')")
+            VALUES ('$name', '$genre', '$release', '$season', '$synopsis')")
             or die(mysqli_error($con));
             
         if($query){

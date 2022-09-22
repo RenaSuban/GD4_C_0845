@@ -34,8 +34,8 @@ style="background-color: #FFFFFF; border-top:
             </select>
         </div>
         <div class="mb-3">
-            <label for="release" class="form-label">Release</label>
-            <input class="form-control" id="release" name="release" aria-describedby="releaseHelp">
+            <label for="realese" class="form-label">Realese</label>
+            <input class="form-control" id="realese" name="realese" aria-describedby="realeseHelp">
         </div>
         <div class="mb-3">
             <label for="season" class="form-label">Season</label>
