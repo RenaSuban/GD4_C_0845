@@ -5,12 +5,12 @@
 
         $name = $_POST['name'];
         $genre = $_POST['genre'];
-        $realese = $_POST['release'];
+        $realese = $_POST['realese'];
         $season = $_POST['season'];
         $synopsis = $_POST['synopsis'];
 
-        $query = mysqli_query($con, "INSERT INTO movies(name, genre, release, season, synopsis) 
-            VALUES ('$name', '$genre', '$release', '$season', '$synopsis')")
+        $query = mysqli_query($con, "INSERT INTO movies(name, genre, realese, season, synopsis) 
+            VALUES ('$name', '$genre', '$realese', '$season', '$synopsis')")
             or die(mysqli_error($con));
             
         if($query){

@@ -57,12 +57,12 @@ style="background-color: #FFFFFF; border-top:
             if(isset($_POST['editMovie'])){
                 mysqli_query($con, "UPDATE movies SET 
                 name='$_POST[name]', genre='$_POST[genre]', 
-                realese='$_POST[release]', season='$_POST[season]', synopsis='$_POST[synopsis]' 
+                realese='$_POST[realese]', season='$_POST[season]', synopsis='$_POST[synopsis]' 
                 WHERE id='$_GET[id]'");
                 
                 echo
                     '<script>
-                    alert("Edit Movies Success"); 
+                    alert("Edit Movie Success"); 
                     window.location = "../page/listMoviesPage.php"
                     </script>';
             }
