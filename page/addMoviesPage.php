@@ -9,7 +9,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
 
     <form action="../process/addMoviesProcess.php" method="post">
         <div>
-            <h3 style="text-align: center">Add Movie</h3>
+            <h3 style="text-align: center">ADD MOVIE</h3>
         </div>
         <div class="mb-3">
             <label for="name" class="form-label">Movie Name</label>

@@ -15,10 +15,10 @@ style="background-color: #FFFFFF; border-top:
  5px solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
     <form action="" method="post">
         <div>
-            <h3 style="text-align: center">Edit Movie</h3>
+            <h3 style="text-align: center">EDIT MOVIE</h3>
         </div>
         <div class="mb-3">
-            <label for="name" class="form-label">Movie's Name</label>
+            <label for="name" class="form-label">Movie Name</label>
             <input class="form-control" id="name" name="name" 
             aria-describedby="nameHelp" value="<?php echo $data['name']?>"> 
         </div>

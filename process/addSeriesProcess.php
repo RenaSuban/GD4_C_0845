@@ -1,28 +1,31 @@
 <?php
-    if(isset($_POST['addMovie'])){
+    if(isset($_POST['addSeries'])){
 
         include('../db.php');
 
         $name = $_POST['name'];
-        $genre = $_POST['genre'];
+        $genre = implode(",",$_POST['genre']);
         $realese = $_POST['realese'];
+        $episode = $_POST['episode'];
         $season = $_POST['season'];
         $synopsis = $_POST['synopsis'];
 
-        $query = mysqli_query($con, "INSERT INTO movies(name, genre, realese, season, synopsis) 
-            VALUES ('$name', '$genre', '$realese', '$season', '$synopsis')")
+        $query = mysqli_query($con,
+        "INSERT INTO series(name, genre, realease, episode, season, synopsis) 
+            VALUES
+        ('$name', '$genre', '$realese', '$episode', '$season', '$synopsis')")
             or die(mysqli_error($con));
             
         if($query){
             echo
                 '<script>
-                alert("Add Movie Success"); 
-                window.location = "../page/listMoviesPage.php"
+                alert("Add Series Success"); 
+                window.location = "../page/listSeriesPage.php"
                 </script>';
         }else{
             echo
                 '<script>
-                alert("Add Movie Failed");
+                alert("Add Series Failed");
                 </script>';
         }  
     }else{
